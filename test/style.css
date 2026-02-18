@@ -49,8 +49,8 @@ body {
 .media-container {
     width: 80%;
     margin: 0 auto;
-    border: 5px solid rgba(255,255,255,0.1); /* Легкая рамка */
     line-height: 0;
+    align-items: center;
 }
 
 .main-gif {
@@ -67,4 +67,5 @@ body {
     height: 60px;
     background-color: #E6C5C5; /* Нежно-розовый цвет низа */
     clip-path: polygon(0 40%, 15% 30%, 30% 50%, 45% 25%, 65% 45%, 80% 20%, 100% 40%, 100% 100%, 0 100%);
+
 }
