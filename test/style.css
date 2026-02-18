@@ -48,15 +48,17 @@ body {
 
 .media-container {
     width: 80%;
-    margin: 0 auto;
-    line-height: 0;
-    align-items: center;
+    margin: 0 auto; /* Это центрирует сам контейнер */
+    line-height: 0; /* Убирает лишнее пространство под видео */
+    text-align: center; /* Дополнительная страховка для центрирования встроенных элементов */
 }
 
 .main-gif {
-    width: 100%;
+    width: 100%; /* Видео занимает всю ширину контейнера */
     height: auto;
-    display: block;
+    display: block; /* Убирает лишние отступы у видео, позволяет margin: auto работать */
+    margin-left: auto; /* Эти два свойства работают как страховка */
+    margin-right: auto; /* для центрирования, если display: block не сработал */
 }
 
 /* Эффект рваной бумаги внизу */
@@ -69,3 +71,4 @@ body {
     clip-path: polygon(0 40%, 15% 30%, 30% 50%, 45% 25%, 65% 45%, 80% 20%, 100% 40%, 100% 100%, 0 100%);
 
 }
+
